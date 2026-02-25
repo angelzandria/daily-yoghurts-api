@@ -191,6 +191,7 @@ def mpesa_payment():
     url = "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest" # C2B URL
 
 
+
     response = requests.post(url, json=payload, headers=headers)
     print(response.text)
 
